@@ -8,7 +8,11 @@ Shortcut for adding a comment is cmnd + /
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: darkslategray;
+    /* adding a background image */
+    background-image: url(../images/white_brick_wall.png);
  }
+
+
 
  h1 {
     color: cadetblue;
@@ -34,13 +38,25 @@ body {
  nav ul a {
     color: darkslategray;
     text-decoration: none;
+    font-size: 1.5rem;
+    /* 1.5rem (html font size) = 16px (default becasue its not set) * 1.5 = 24px */
  }
 
 
 /* Selecting element with ID value */
 /* As a best practice, try to avoid using IDs for styles */
  #treatoftheweek {
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
+    /* color image repeat position-x position-y */
+    background: cadetblue url(../images/bread.jpg) no-repeat center;
+    background-size: cover;
+    font-size: 1.25rem;
+    /* 1.25 * 16 px = 20px */
+    padding: 1em;
+    /* 1 * 20px (element font size) = 20px */
+    /* viewport based units */
+    /* width: 100vw; */
+    width: 50%;
  }
 
 .blue-link {
@@ -62,6 +78,10 @@ body {
 /* Direct child selector - will only select the direct child of the parent */
 article>p {
     font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-transform: lowercase;
+    text-align: center;
 }
 
 /* Adjacent sibling selector - selects the element that is the very next sibling to the element, if any exist */
