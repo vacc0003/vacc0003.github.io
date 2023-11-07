@@ -60,28 +60,35 @@ footer {
 /* ––––––––––––––––––––––– Navigation & header ––––––––––––––––––––––– */
 h1 {
     background: url(../images/lone-starfish-wide.jpg) no-repeat center;
-    background-size:cover;
     padding: 3em 3em 1.5em 3em;
+    max-width: 100%;
     text-align: center;
 }
 
 nav {
+    padding: -2em 0em 0em 0em;
     text-align: center;
 }
 
-nav ul li {
+nav ul li{
     display: inline-block;
+    padding: 0em 2em 0em 2em;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
-nav a {
+nav a{
     text-decoration: none;
     color: black;
-    padding: 0em 4em 0em 4em;
-    text-align: center;
-    box-sizing: border-box;
-    width: 100%;
 }
+
+/* nav ul li a {
+    transition: all 0.2s ease 0s;
+}
+
+nav ul li a:hover {
+    color: #AAD4CF
+} */
 
 .bar {
     border-right: 2px solid rgb(176, 176, 176);
@@ -163,4 +170,3 @@ footer {
     padding: 1em 2em .5em 0em;
     text-align: right;
 }
-
