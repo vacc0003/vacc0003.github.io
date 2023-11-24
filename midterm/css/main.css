@@ -23,7 +23,7 @@ body {
 
 /* –––––––––––––––––––––––––––––– Fonts –––––––––––––––––––––––––––––– */
 
- h1 {
+h1 {
     color: white;
     font-size: 2.5em; 
 }
@@ -58,6 +58,7 @@ footer {
 
 
 /* ––––––––––––––––––––––– Navigation & header ––––––––––––––––––––––– */
+
 h1 {
     background: url(../images/lone-starfish-wide.jpg) no-repeat center;
     background-size:cover;
