@@ -1,0 +1,158 @@
+ /**************************************************** 
+                    Global Styles
+ *****************************************************/
+
+
+/* ------------------ STRUCTURE ------------------ */
+
+html {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+body {
+    line-height: 1.5em;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.hundo-p {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.max-mar {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* ------------------ TYPOGRAPHY ------------------ */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: bold;
+    margin: 1em 0 0.5em;
+}
+
+h1 {
+    font-size: 5.063rem;
+}
+
+h2 {
+    font-size: 3.375rem;
+}
+
+h3 {
+    font-size: 2.25rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+p {
+    margin: 1em 0;
+}
+
+
+/* ------------------ NAVIGATION ------------------ */
+
+nav {
+    background-color: #222;
+}
+
+.mobile-logo {
+    background-color: #c78c06;
+} 
+
+nav a,
+nav a:link,
+nav a:visited {
+    color: #c78c06;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #222;
+}
+
+nav a.current,
+nav a:link.current,
+nav a:visited.current {
+    color: #222;
+}
+
+nav ul a,
+nav ul a:link,
+nav ul a:visited {
+    display: block;
+    padding: 1.5em 0;
+    text-decoration: none;
+}
+
+nav ul a:hover,
+nav ul a:focus,
+nav ul a.current {
+    background-color: #c78c06;
+    color: inherit;
+} 
+
+nav ul li {
+    margin: 0 auto;
+    text-align: center;
+}
+
+nav ul {
+    padding: 1em;
+}
+
+nav img {
+    display: flex;
+}
+
+.search-bar {
+    display: flex;
+}
+
+#search {
+    width: 100%;
+    flex-grow: 1;
+    padding: 1em ;
+}
+
+button i {
+    color: #c78c06;
+    padding: 0 .2em;
+    font-size: 24px;
+}
+
+.bttn { 
+    display:inline-block;
+    padding: 15px 10px;
+    border: 1.5px solid #c78c06;
+    background-color: #222;
+}
+
+.bttn:hover,
+.bttn:focus {
+    background-color: #c78c06;
+
+    .fa-solid {
+        color: #222;
+        padding: 0 .2em;
+        font-size: 24px;
+    }
+}
+
