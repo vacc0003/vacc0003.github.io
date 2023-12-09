@@ -1,34 +1,9 @@
+ 
+ 
  /**************************************************** 
                     Global Styles
  *****************************************************/
 
-
-/* ------------------ STRUCTURE ------------------ */
-
-html {
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-}
-
-body {
-    line-height: 1.5em;
-}
-
-.container {
-    width: 100%;
-    margin: 0 auto;
-}
-
-.hundo-p {
-    width: 100%;
-    margin: 0 auto;
-}
-
-.max-mar {
-    max-width: 1200px;
-    margin: 0 auto;
-}
 
 
 /* ------------------ TYPOGRAPHY ------------------ */
@@ -44,6 +19,7 @@ h5 {
 
 h1 {
     font-size: 5.063rem;
+    line-height: 5rem;
 }
 
 h2 {
@@ -66,11 +42,69 @@ p {
     margin: 1em 0;
 }
 
+.intro h1 {
+    font-size: 4rem;
+}
+
+
+
+/* ------------------- BUTTONS -------------------- */
+
+.shader a {
+    color: #222;
+    text-decoration: none;
+    display:inline-block;
+    padding: 1.5em 1.5em;
+    background-color: #c78c06;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    font-size: 1.3rem;
+}
+
+ .intro a i{
+    padding-left: .5em;
+ }
+
+.intro a:hover,
+.intro a:focus {
+    background-color: #ffe6ac;
+}
+
+.shader a:hover,
+.shader a:focus {
+    color: #c78c06;
+}
+
+.info a {
+    color: white;
+    text-decoration: none;
+    padding: 1.2em;
+    background-color: #222;
+    font-size: 1.3rem;
+}
+
+.info a:hover,
+.info a:focus {
+    background-color: #c78c06;
+    color: #222;
+}
+
+.info a i {
+    padding-left: .5em;
+}
+
+
 
 /* ------------------ NAVIGATION ------------------ */
 
 nav {
     background-color: #222;
+    width: 100%;
+    margin: 0 auto;
+}
+
+nav ul {
+    padding: 1em;
 }
 
 .mobile-logo {
@@ -81,6 +115,7 @@ nav a,
 nav a:link,
 nav a:visited {
     color: #c78c06;
+    padding: 1em 0;
 }
 
 nav a:hover,
@@ -98,7 +133,6 @@ nav ul a,
 nav ul a:link,
 nav ul a:visited {
     display: block;
-    padding: 1.5em 0;
     text-decoration: none;
 }
 
@@ -111,11 +145,8 @@ nav ul a.current {
 
 nav ul li {
     margin: 0 auto;
+    width: 100%;
     text-align: center;
-}
-
-nav ul {
-    padding: 1em;
 }
 
 nav img {
@@ -128,31 +159,190 @@ nav img {
 
 #search {
     width: 100%;
-    flex-grow: 1;
-    padding: 1em ;
+    margin: 0 auto;
 }
 
-button i {
-    color: #c78c06;
-    padding: 0 .2em;
-    font-size: 24px;
-}
-
-.bttn { 
+.search-bttn { 
     display:inline-block;
-    padding: 15px 10px;
+    padding: 5px 5px;
     border: 1.5px solid #c78c06;
     background-color: #222;
+    color: #c78c06;
+    font-size: 15px;
 }
 
-.bttn:hover,
-.bttn:focus {
+.search-bttn:hover,
+.search-bttn:focus {
     background-color: #c78c06;
-
-    .fa-solid {
-        color: #222;
-        padding: 0 .2em;
-        font-size: 24px;
-    }
+    color: #222;
 }
+
+
+
+/* ---------------- HEADER SECITON -------------- */
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+}
+
+body {
+    line-height: 1.5em;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.nav-box {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.max-mar {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hundo-p {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.intro {
+    background-image: url(../images/main-banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    color: white;
+    padding-top: 2em;
+}
+
+.shader {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+}
+
+.hero-box {
+    padding: .5em .5em 0 1em;
+}
+
+
+
+/* ---------------- ABOUT SECITON -------------- */
+
+#about {
+    background-color: #ffe6ac;
+}
+
+#about img {
+    width: 100%;
+    height: 100%;
+}
+
+.about-image {
+    padding: 1em;
+}
+
+.about {
+    padding: 0 1em 1em 1em;
+}
+
+
+
+/* --------------- SERVICES SECITON ------------- */
+
+#services {
+    max-width: 1200px;
+    display: block;
+}
+
+#services h2 {
+    padding: 0 0 .5em .2em;
+}
+
+.card img {
+    width: 100%;
+}
+
+.info {
+    padding: 1em;
+}
+
+.card {
+    background-color: #ffe6ac;
+    margin: .5em;
+    padding-bottom: 1.5em;
+}
+
+.card p {
+    padding-bottom: 2em;
+}
+
+
+
+  /**************************************************** 
+                    Desktop Styles
+ *****************************************************/
+
+ @media screen and (min-width:600px) {
+    html {
+        font-size: 16px;
+    }
+    /* .mobile-logo {
+        display: none;
+    }
+    .desktop-logo {
+        display: inline-block;
+        max-width: 300px;
+    } */
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "one one one two two two"
+        "three three four four five five"
+        ;
+    }
+    
+    .cards .card:nth-child(1) {
+        grid-area:one;
+
+    }
+    
+    .cards .card:nth-child(2) {
+        grid-area:two;
+    }
+    
+    .cards .card:nth-child(3) {
+        grid-area:three;
+    }
+    
+    .cards .card:nth-child(4) {
+        grid-area:four;
+    }
+    
+    .cards .card:nth-child(5) {
+        grid-area:five;
+    }
+
+    .info a {
+        color: white;
+        text-decoration: none;
+        display:block;
+        width: 100%;
+        margin: 0 auto;
+        padding: 1.5em 0 1.5em 0;
+        background-color: #222;
+        text-align: center;
+    }
+}   
 
