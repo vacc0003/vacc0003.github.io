@@ -20,7 +20,6 @@ html {
     align-items: center;
     justify-content: center;
     height: 100%;
-    min-width: 800px;
 }
 
 .main img {
@@ -107,22 +106,46 @@ p {
 @media only screen and (max-width: 1100px) {
 
     .cat {
-        display: none;
+        position: absolute;
+        bottom: -25%; 
+        left: 80%; 
+        transform: translateX(-50%);
+        width: 50%; 
+        max-width: 200px; 
+        animation: bobbing 3s ease-in-out infinite; 
+    }
+      
+      @keyframes bobbing {
+        0%, 100% {
+          transform: translateX(-50%) translateY(0);
+        }
+        50% {
+          transform: translateX(-50%) translateY(-10px); 
+        }
+    }
+    
+      .container {
+        position: relative;
+        width: 100%; 
+        height: auto; 
     }
 
     .main {
-        background-color: #1e1d24;
-        background-image: url(../images/background.webp);
-        background-size: 100% auto; 
-        height: 100%; 
-        display: flex;
+        background-image: none;
+    }
+
+    .main img {
+        height: 70vh;
+        margin: 0 auto;
         align-items: center;
-        justify-content: center;
     }
 
-    html {
-        background-color: #1e1d24;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1100px) {
+
+    .cat {
+        display: none;
     }
-
-
+   
 }
