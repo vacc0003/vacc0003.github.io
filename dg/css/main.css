@@ -76,12 +76,12 @@ p {
 
 .cat {
     position: absolute;
-    bottom: 60%; /* Adjust the position relative to the container height */
-    left: 80%; /* Adjust the horizontal position */
+    bottom: 60%; 
+    left: 80%; 
     transform: translateX(-50%);
-    width: 50%; /* Set a percentage width */
-    max-width: 200px; /* Set a maximum width to maintain proportion on larger screens */
-    animation: bobbing 3s ease-in-out infinite; /* Adjust the animation speed and timing */
+    width: 50%; 
+    max-width: 200px; 
+    animation: bobbing 3s ease-in-out infinite; 
 }
   
   @keyframes bobbing {
@@ -89,12 +89,37 @@ p {
       transform: translateX(-50%) translateY(0);
     }
     50% {
-      transform: translateX(-50%) translateY(-10px); /* Adjust the maximum height of bobbing */
+      transform: translateX(-50%) translateY(-10px); 
     }
 }
 
   .container {
     position: relative;
-    width: 100%; /* Set the width as needed */
-    height: auto; /* Adjust to fit the content */
+    width: 100%; 
+    height: auto; 
+}
+
+
+/* ------------------- MOBILE ------------------- */
+
+
+@media only screen and (max-width: 600px) {
+
+    .cat {
+        display: none;
+    }
+
+    .main {
+        background-color: #1e1d24;
+        background-image: url(../images/background.webp);
+        background-size: 100% auto; 
+        height: 100%; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    html {
+        background-color: #1e1d24;
+    }
 }
