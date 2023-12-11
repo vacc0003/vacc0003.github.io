@@ -1,0 +1,100 @@
+ 
+ 
+ /**************************************************** 
+                    Global Styles
+ *****************************************************/
+
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.main {
+    background-color: #1e1d24;
+    background-image: url(../images/background.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.main img {
+    height: 100vh;
+    margin: 0 auto;
+    align-items: center;
+}
+
+
+
+
+/* ------------------ TYPOGRAPHY ------------------ */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: bold;
+    margin: 1em 0 0.5em;
+}
+
+h1 {
+    font-size: 5.063rem;
+    line-height: 5rem;
+}
+
+h2 {
+    font-size: 3.375rem;
+}
+
+h3 {
+    font-size: 2.25rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+p {
+    margin: 1em 0;
+}
+
+.intro h1 {
+    font-size: 4rem;
+}
+
+
+/* -------------------- CAT -------------------- */
+
+.cat {
+    position: absolute;
+    bottom: 60%; /* Adjust the position relative to the container height */
+    left: 80%; /* Adjust the horizontal position */
+    transform: translateX(-50%);
+    width: 50%; /* Set a percentage width */
+    max-width: 200px; /* Set a maximum width to maintain proportion on larger screens */
+    animation: bobbing 3s ease-in-out infinite; /* Adjust the animation speed and timing */
+}
+  
+  @keyframes bobbing {
+    0%, 100% {
+      transform: translateX(-50%) translateY(0);
+    }
+    50% {
+      transform: translateX(-50%) translateY(-10px); /* Adjust the maximum height of bobbing */
+    }
+}
+
+  .container {
+    position: relative;
+    width: 100%; /* Set the width as needed */
+    height: auto; /* Adjust to fit the content */
+}
