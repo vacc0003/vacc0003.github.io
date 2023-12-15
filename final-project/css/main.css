@@ -5,7 +5,6 @@
  *****************************************************/
 
 
-
 /* ------------------ TYPOGRAPHY ------------------ */
 
 h1,
@@ -132,14 +131,19 @@ form button:focus {
 
 /* ------------------ NAVIGATION ------------------ */
 
+.nav-box {
+    background-color: #222;
+    padding: 1em;
+}
+
+nav img {
+    display: flex;
+}
+
 nav {
     background-color: #222;
     width: 100%;
     margin: 0 auto;
-}
-
-nav ul {
-    padding: 1em;
 }
 
 .logo {
@@ -181,10 +185,6 @@ nav ul li {
     margin: 0 auto;
     width: 100%;
     text-align: center;
-}
-
-nav img {
-    display: flex;
 }
 
 .search-bar {
@@ -230,11 +230,6 @@ body {
 }
 
 header {
-    width: 100%;
-    margin: 0 auto;
-}
-
-.nav-box {
     width: 100%;
     margin: 0 auto;
 }
@@ -347,7 +342,6 @@ header {
 
 .team-card {
     padding:0 1em 1em 1em;
-    /* margin-bottom: 1em; */
 }
 
 .team-card h4 {
@@ -446,7 +440,7 @@ table {
 
 
 
-/* ------------------ FOOTER SECITON ---------------- */
+/* --------------------- FOOTER -------------------- */
 
 .footer {
     background-color: #222;
@@ -476,6 +470,7 @@ table {
 
  @media screen and (max-width:600px) {
     
+
     .intro {
         padding: 3em 0 4em 0;
     }
@@ -530,13 +525,20 @@ table {
 
     nav ul {
         display: flex;
-        justify-content: center;
         align-items: center;
         margin: 0 auto;
     }
   
     li .logo {
         background-color: #222;
+    }
+
+   .logo {
+        pointer-events: none;
+    }
+
+    nav li {
+        padding: 0 1em;
     }
 
 
@@ -569,10 +571,13 @@ table {
         max-width: 1200px;
     }
 
+    .about h2 {
+        padding-bottom: .2em;
+    }
+
 
 
     /* --------------- SERVICES SECITON ------------- */
-
 
     .cards {
         display: grid;
@@ -694,7 +699,21 @@ table {
     }
     
 
+    /* -------------------- FOOTER ------------------ */
 
+    .footer-text {
+        font-size: .7em;
+        max-width: 1200px;
+    }
+
+    .footer-text a:hover,
+    .footer-text a:focus {
+        color:#ffe6ac;
+    }
+
+    .cr, .src {
+        padding: 0 1.5em;
+    }
 
 
 }   
