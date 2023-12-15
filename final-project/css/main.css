@@ -674,6 +674,9 @@ table {
 
     /* ----------------- TEAM SECITON -------------- */
 
+    #team h2 {
+        padding: .2em;
+    }
 
     .block {
         display: grid;
