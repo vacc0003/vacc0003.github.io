@@ -175,7 +175,6 @@ nav ul a:hover,
 nav ul a:focus,
 nav ul a.current {
     background-color: #c78c06;
-    color: inherit;
 } 
 
 nav ul li {
@@ -293,12 +292,7 @@ header {
 
 /* --------------- SERVICES SECITON ------------- */
 
-#services {
-    max-width: 1200px;
-    display: block;
-}
-
-#services h2 {
+.services h2 {
     padding: 0 0 .3em .2em;
 }
 
@@ -312,12 +306,10 @@ header {
 
 .card {
     background-color: #ffe6ac;
-    margin: 1em;
-    padding-bottom: 1.5em;
 }
 
-.card p {
-    padding-bottom: 2em;
+.services {
+    max-width: 1200px;
 }
 
 
@@ -331,12 +323,6 @@ header {
     color: white;
     margin: 0 auto;
 }
-
-.vision-text {
-    margin: 1em;
-    padding: 1em;
-}
-
 
 .invision {
     max-width: 1200px;
@@ -361,7 +347,7 @@ header {
 
 .team-card {
     padding:0 1em 1em 1em;
-    margin-bottom: 1em;
+    /* margin-bottom: 1em; */
 }
 
 .team-card h4 {
@@ -484,6 +470,49 @@ table {
 
 
 
+ /**************************************************** 
+                    Mobile Styles
+ *****************************************************/
+
+ @media screen and (max-width:600px) {
+    
+    .intro {
+        padding: 3em 0 4em 0;
+    }
+
+    .about h2 {
+        padding-bottom: .5em;
+    }
+
+    .about p:last-child {
+        padding-bottom: 1em;
+    }
+
+    .card p {
+        padding-bottom: 2em;
+    }
+
+    .info h3 {
+        padding-bottom: .5em;
+    }
+    
+    .card {
+        margin: 1em;
+        padding-bottom: 1.5em;
+    }
+
+    .team-card {
+        margin-bottom: 1em;
+    }
+    
+    .vision-text {
+        margin: 1em;
+        padding: 1em;
+    }
+
+ }
+
+
 
   /**************************************************** 
                     Desktop Styles
@@ -527,36 +556,30 @@ table {
 
     /* ---------------- ABOUT SECITON -------------- */
 
-    #about img {
-        width: 700px;
-        padding: 0;
-        margin: 0;
+    .yellow-bg {
+        background-color: #ffe6ac;
     }
 
-    .yellow {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
+    .about-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #about {
         max-width: 1200px;
-    }
-
-    .about {
-        padding: 0;
-    } 
-
-    .about h2 {
-        padding-bottom: .5em;
     }
 
 
 
     /* --------------- SERVICES SECITON ------------- */
 
+
     .cards {
         display: grid;
+        grid-template-columns: repeat(auto-fill, 200px);
+        grid-gap: 15px;
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
         grid-template-areas: 
         "one one one two two two"
         "three three four four five five"
@@ -565,7 +588,6 @@ table {
     
     .cards .card:nth-child(1) {
         grid-area:one;
-
     }
     
     .cards .card:nth-child(2) {
@@ -595,6 +617,22 @@ table {
         text-align: center;
     }
 
+    .card p {
+        padding-bottom: 1em;
+    }
+
+    .info h3 {
+        padding-bottom: .3em;
+    }
+    
+    .cards {
+        margin: 1em;
+    }
+
+    .services {
+        padding-bottom: .5em;
+    }
+
 
 
     /* --------------- VISION SECITON ------------- */
@@ -607,19 +645,59 @@ table {
         max-width: 1200px;
     }
 
-
-
-    /* --------------- TEAM SECITON ------------- */
-
-    .teams {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows:50px ;
+    .vision-text {
+        margin: 1em 0;
+        padding: 1em;
     }
 
+
+
+    /* ----------------- TEAM SECITON -------------- */
+
+    .john {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .bob {
+        display: grid;
+        grid-template-columns:repeat(2,1fr);
+    }
+
+     .blocks:nth-child(2) {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .blocks:nth-child(1) {
+        grid-column: 2;
+    }  
+
+
+
+    /* --------------- CONTACT SECITON ------------- */
+
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .block:nth-child(3) {
+        grid-column: 2/2;
+        grid-row: 1/1;
+    }
+
+    .block:nth-child(2) {
+        grid-column: span 3;
+        grid-row: 2/2;
+    }
     
 
 
+
+
 }   
+
 
   
